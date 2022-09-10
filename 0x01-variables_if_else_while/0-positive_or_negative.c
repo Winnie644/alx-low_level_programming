@@ -3,9 +3,9 @@
 #include <stdio.h>
 
 /**
- * main - assigns random integer each time it is executed
+ * main - Entry point
  * executes and prints it
- * Return; Always 0 (success)
+ * Return: Always 0 (success)
  */
 int main(void)
 {
