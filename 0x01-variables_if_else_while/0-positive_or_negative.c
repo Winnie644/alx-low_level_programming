@@ -4,6 +4,7 @@
 
 /**
  * main - assigns random integer each time it is executed
+ * executes and prints it
  * Return; Always 0 (success)
  */
 int main(void)
