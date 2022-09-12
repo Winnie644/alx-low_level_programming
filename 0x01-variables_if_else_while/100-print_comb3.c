@@ -8,22 +8,22 @@ int main(void)
 {
 	int n, m;
 /**/
-	for (n = 0; n <= 8; n++)
+	for (n = '0'; n <= '8'; n++)
 	{
-		for (m = 0; m <= 9; m++)
+		for (m = '0'; m <= '9'; m++)
 		{
-			if (n == 0 && m == 0)
+			if (n == '0' && m == '0')
 			{
 				continue;
 			}
 			putchar(m);
 			putchar(n);
-				if (n == 9 && m == 8)
+				if (n == '9' && m == '8')
 				{
 					continue;
 				}
-				putchar(',');
-				putchar(' ');
+			putchar(',');
+			putchar(' ');
 		}
 	}
 	putchar('\n');
