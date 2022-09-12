@@ -12,20 +12,23 @@ int main(void)
 	{
 		for (m = 0; m <= 9; m++)
 		{
-			if(n == 0 && m == 0)
+			if (n == 0 && m == 0)
 			{
-				continue
-			}
-			putchar(n);
-			putchar(m);
-				if (m == 0 && n == 8)
+				if (l > m && m > n)
 				{
-					continue;
+					putchar(n);
+					putchar(m);
+					putchar(l);
+					if (n != 55 || m != 56)
+					{
+						putchar(',');
+						putchar(' ');
+
+					}
 				}
-				putchar(',');
-				putchar(' ');
+			}
 		}
-	}	
+	}
 	putchar('\n');
 	return (0);
 }
