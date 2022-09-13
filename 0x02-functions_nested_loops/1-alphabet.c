@@ -1,9 +1,20 @@
-#include <stdio.h>
-#include <main.h>
-
-int main()
+/*
+ * File: 1-alphabet.c
+ * Auth: Winnie644
+ */
+#include "main.h"
+/**
+ * print_alphabet -This program prints
+ *		 the english alphabet from a-z.
+ * Return: Void.
+ */
+void print_alphabet(void);
 {
-	printf ("_Putchar");
-	printf ("\n");
-	return 0;
+	char c;
+
+	for (c = 'a'; c <= 'z'; c++)
+	{
+		_putchar(c);
+	}
+	_putchar('\n');
 }
