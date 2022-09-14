@@ -18,7 +18,7 @@ int main(void)
 
 	{
 
-		sum = sum + y;
+		if ((y % 3 == 0) || (y % 5 == 0))
 
 		{
 
