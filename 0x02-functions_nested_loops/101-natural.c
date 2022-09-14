@@ -5,8 +5,8 @@
 #include "main.h"
 #include <stdio.h>
 /**
- *main - check for multiples of 3 and 5
- *Return: 0 always
+ * main - check for multiples of 3 and 5
+ * Return: 0 always
  */
 int main(void)
 
