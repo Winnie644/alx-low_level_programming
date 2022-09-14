@@ -1,7 +1,8 @@
-/**
+/*
  * file: 3-islower.c
  * Auth: winnie644
  */
+
 #include "main.h"
 /**
  * _islower - checks for lowercase character.
