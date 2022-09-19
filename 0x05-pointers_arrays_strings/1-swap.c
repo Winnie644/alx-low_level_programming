@@ -3,8 +3,9 @@
  *
  * @a: first value to swap
  * @b: second value to swap
+ * Return: always void (0)
  */
-Return: always void
+void swap_int(int *a, int *b)
 {
 	int temp;
 
@@ -12,4 +13,3 @@ Return: always void
 	*a = *b;
 	*b = temp;
 }
-
