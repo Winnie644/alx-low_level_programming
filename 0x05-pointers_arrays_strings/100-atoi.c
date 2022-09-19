@@ -1,5 +1,6 @@
-nclude "main.h"
+#include "main.h"
 #include <stdio.h>
+
 /**
  * _atoi - a function that converts string to integer
  * @s: An input string
@@ -29,5 +30,6 @@ int _atoi(char *s)
 	}
 	if (sign < 0)
 		total = (-total);
+	return (total);
 }
 
