@@ -3,9 +3,10 @@
  *
  *   @s1: first string
  *   @s2: second string
+ *
  *   Return: -15 if s1 < s2
- *   0  if s1 = s2
- *   15 if s1 > s2
+ *            0  if s1 = s2
+ *            15 if s1 > s2
  */
 int _strcmp(char *s1, char *s2)
 {
@@ -16,8 +17,8 @@ int _strcmp(char *s1, char *s2)
 
 	while (*(s1 + s1Length) != '\0')
 		s1Length++;
-	while (*(s2 + s2Length) != '\0')
-		s2Length++;
+	while (*(s2 + s2Length) != '\0'
+			s2Length++;
 
 	smallerLength = (s1Length < s2Length) ? s1Length : s2Length;
 	rtrnValNeg += -(smallerLength);
@@ -26,17 +27,16 @@ int _strcmp(char *s1, char *s2)
 	if (s1Length < s2Length)
 		return (rtrnValNeg);
 	if (s1Length > s2Length)
-		if (s1Length > s2Length)
-			return (rtrnValNeg);
+		return (rtrnValPos);
 
 	while (*s1) /*same length, so loop through one and check both */
 	{
-	if (*s1 < *s2)
-		return (rtrnValNeg);
-	if (*s1 > *s2)
+		if (*s1 < *s2)
+			return (rtrnValNeg);
+		if (*s1 > *s2)
 		return (rtrnValPos);
-	s1++;
-	s2++;
+		s1++;
+		s2++;
 	}
 	return (0); /* equal */
 }
