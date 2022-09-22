@@ -1,16 +1,18 @@
 /**
- * _strncpy - copies string, up to n bytes
+ * _strncat - concatanates two strings
  *
- * @dest: destination str to copy into
- * @src: string to copy to dest
- * @n: number of bytes to copy from src
+ *  @dest: destination string
+ *  @src: string to add to end of dest
+ *  @n: num of bytes to take from src
  *
- * Return: char pointer to beginning of dest
+ *  Description: only takes n bytes from src
+ *
+ *  Return: char pointer to dest
  */
 char *_strncat(char *dest, char *src, int n)
 {
-	char *temp = dest;
 	int counter = 0, srcLength = 0;
+	char *temp = dest;
 
 	while (*(src + srcLength) != '\0')
 		srcLength++;
@@ -18,6 +20,7 @@ char *_strncat(char *dest, char *src, int n)
 		dest++;
 	if (n > srcLength)
 		n = srcLength;
+
 	while (counter < n)
 	{
 		*dest++ = *src++;
