@@ -11,7 +11,7 @@ char *_strcat(char *dest, char *src)
 	int srcLength = 0;
 	int counter = 0;
 	char *temp = dest;
-	char *temp = dest;
+	char *tempSource = src;
 
 	while (*dest)
 		dest++;
@@ -25,5 +25,3 @@ char *_strcat(char *dest, char *src)
 	*dest = '\0';
 	return (temp);
 }
-
-
