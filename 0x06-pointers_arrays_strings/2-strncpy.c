@@ -7,8 +7,7 @@
  *
  * Return: char pointer to beginning of dest
  */
-char *
-strncpy(char *dest, char *src, int n)
+char * strncpy(char *dest, char *src, int n)
 {
 	char *temp = dest;
 	int counter = 0, srcLength = 0;
