@@ -1,5 +1,5 @@
 /**
- *_strncpy - copies string, up to n bytes
+ *strncpy - copies string, up to n bytes
  *
  * @dest: destination str to copy into
  * @src: string to copy to dest
@@ -7,7 +7,7 @@
  *
  * Return: char pointer to beginning of dest
  */
-char *_strncpy(char *dest, char *src, int n)
+char *strncpy(char *dest, char *src, int n)
 {
 	char *temp = dest;
 	int counter = 0, srcLength = 0;
