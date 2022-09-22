@@ -1,9 +1,9 @@
 /**
- * string_toupper - converts string to upper case
+ *  string_toupper - converts string to upper case
  *
- * @str: string to convert
+ *  @str: string to convert
  *
- * Return: char pointer to converted string
+ *  Return: char pointer to converted string
  */
 char *string_toupper(char *str)
 {
@@ -13,7 +13,7 @@ char *string_toupper(char *str)
 	{
 		if (*str >= 'a' && *str <= 'z')
 			*str -= 32;
-		str++
+		str++;
 	}
 	return (start);
 }
