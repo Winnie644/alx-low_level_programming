@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * _strncpy - copies string, up to n bytes
  *
