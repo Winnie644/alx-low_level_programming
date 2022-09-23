@@ -1,4 +1,5 @@
 #include <stdio.h>
+void print_buffer_line(char *b, int n, int cur);
 /**
  * print_buffer - prints contents of a buffer
  * @b: buffer to print
@@ -27,5 +28,32 @@ void print_buffer(char *b, int size)
 		putchar('\n');
 		bitCounter += 10;
 		i++;
+	}
+}
+/**
+ * print_buffer_line - prints chars of buffer as buffchar in sets of 2
+ *
+ * @b: buffer to print line from
+ * @numBitsInLine: number of bits in line, print spaces to fill in
+ * @currentPos: position in array of starting point of line
+ *
+ * Return: always void
+ */
+void print_buffer_line(char *b, int numBitsInLine, int currentPos)
+{
+	int nestedCounter = 0;
+
+	while (nestedCounter < 10)
+	{
+		if (nestedCounter >= numBitsInLine)
+			break;
+		else if (b[currentPos + nestedCounter] >= 32
+				&& b[currentPos + nestedCounter] < 127)
+		{
+			printf("%c", b[currentPos + nestedCounter]);
+		}
+		else
+			printf(".");
+		nestedCounter++;
 	}
 }
