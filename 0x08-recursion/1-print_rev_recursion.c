@@ -1,10 +1,10 @@
-#include ""main,h"
+#include "holberton.h"
 /**
- * _print_rev_recursion - puts a string to stdout in reverse
+ *  _print_rev_recursion - puts a string to stdout in reverse
  *
- * @s: string to put to stdout
+ *  @s: string to put to stdout
  *
- * Return: always void
+ *  Return: always void
  */
 void _print_rev_recursion(char *s)
 {
