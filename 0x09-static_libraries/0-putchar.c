@@ -1,23 +1,12 @@
-/*
- * File: 0-putchar.c
- *
- *
- */
-#include "main.h"
-/**
- * main - Prints "putchar", followed by a new line.
- *
- * Return: Always 0.
- */
-int main(void)
-{
-	char c[] = "_putchar";
-	int i;
+#include <unistd.h>
 
-	for (i = 0; i < 8; i++)
-	{
-		_putchar(c[i]);
-	}
-	_putchar('\n');
-	return (0);
+/**
+ * _putchar - Writes character C to stdout
+ * @c: the character to print
+ * Return: on success 1
+ * On error, -1 and errno is set appropriately
+ */
+int _putchar(char c)
+{
+	return (write(1, &c, 1));
 }
