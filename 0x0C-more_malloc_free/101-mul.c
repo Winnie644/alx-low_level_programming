@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "main.h"
 int contains_non_numeric(char *str);
 int _atoi(char *s);
 char *infinite_add(char *n1, char *n2, char *r, int size_r);
