@@ -6,11 +6,11 @@
  *
  * Return: new linkled lists of linked lists
  */
-listint_t *add_nodeint_end(listint_t **head, cons int n)
+listint_t *add_nodeint_end(listint_t **head, const int n)
 {
-	listint_t *temp_head = NULL, new_node = NULL;
+	listint_t *temp_head = NULL, *new_node = NULL;
 
-	temp_head = head;
+	temp_head = *head;
 	/* FIRST ELE NOT NULL, advance to last ele of list */
 	if (temp_head)
 	{
@@ -23,7 +23,7 @@ listint_t *add_nodeint_end(listint_t **head, cons int n)
 	new_node = malloc(sizeof(listin_t));
 	if (!new_node)
 		return (NULL);
-	new_node->n;
+	new_node->n = n;
 	new_node->next = NULL;
 	if (temp_head)
 		temp_head->next = new_node;
