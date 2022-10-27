@@ -1,6 +1,5 @@
 #include "lists.h"
 #include <string.h>
-
 /**
  * add_nodeint - adds a node of listint_t to the head of linked lists
  * @head: pointer to a list_t pointer that points to the head struct
