@@ -8,7 +8,7 @@
  *
  * Return: pointer to a new head list, NULL on failure
  */
-listint_t add_nodeint(listint_t **head, cons int n)
+listint_t *add_nodeint(listint_t **head, const int n)
 {
 	listint_t *temp_head;
 
