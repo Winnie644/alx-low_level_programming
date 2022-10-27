@@ -1,4 +1,5 @@
 #include "lists.h"
+#include <stdio.h>
 
 /**
  * print_listint - prints the elements in linked list
@@ -11,7 +12,7 @@ size_t print_listint(const listint_t *h)
 	size_t n_nodes = 0;
 	const listint_t *temp_h = h;
 
-	while (temp_h)
+	while (temp_h != NULL)
 	{
 		printf("%d\n", temp_h->n);
 		temp_h = temp_h->next;
