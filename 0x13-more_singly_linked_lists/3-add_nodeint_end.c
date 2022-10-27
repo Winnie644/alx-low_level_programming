@@ -20,7 +20,7 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 		}
 	}
 	/*temp_head now pointing to elebefore end of list(before NULL ELE */
-	new_node = malloc(sizeof(listin_t));
+	new_node = malloc(sizeof(listint_t));
 	if (!new_node)
 		return (NULL);
 	new_node->n = n;
