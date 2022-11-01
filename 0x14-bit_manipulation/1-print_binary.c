@@ -7,18 +7,21 @@
  */
 void print_binary(unsigned long int n)
 {
-	unsigned int mask = 32768; /* 1000 0000 0000 0000 */
-	char hit_rel_flag = 0;
+	int i, count = 0;
+	unsigned long int current;
 
-	while (mask > 0)
+	for (i = 63; i >= 0; i--)
 	{
-		if ((n & mask) == 0 && (hit_rel_flag || mask == 0x01))
-			_putchar('0');
-		else if ((n & mask) != 0)
+		current = n >> i;
+
+		if (current & 1)
 		{
 			_putchar('1');
-			hit_rel_flag = 1;
+			count++;
 		}
-		mask = mask >> 1;
+		else if (count)
+			_putchar('0');
 	}
+	if (!count)
+		_putchar('0');
 }
