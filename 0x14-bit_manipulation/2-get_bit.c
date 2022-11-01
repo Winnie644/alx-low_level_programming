@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * get_bit - gets a bit, 1 or 0, at index
  * @n: number to get bit from
@@ -8,12 +9,11 @@
  */
 int get_bit(unsigned long int n, unsigned int index)
 {
-	int ret = 0;
-	unsigned long int mask = 0x01;
+	int bit_val;
 
-	mask = mask << index;
-	if (mask == 0)
+	if (index > 63)
 		return (-1);
-	ret = ((n & mask)) ? 1 : 0;
-	return (ret);
+
+	bit_val = (n >> index) & 1;
+	return (bit_val);
 }
