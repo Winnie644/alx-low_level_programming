@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * print_binary - prints a binary number using bit shifting and masks
  * @n: number to print
