@@ -7,15 +7,16 @@
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-	unsigned int n_flips = 0;
-	unsigned long int xor = (n ^ m);
-	unsigned long int mask = 0x01;
+	int i, count = 0;
+	unsigned long int current;
+	unsigned long int exclusive = n ^ m;
 
-	while (mask <= xor)
+	for (i = 63; i >= 0; i--)
 	{
-		if (mask & xor) /* bit is lit in xor, will need to flip */
-			n_flips++;
-		mask = mask << 1;
+		current = exclusive >> i;
+		if (current & 1)
+			count++;
 	}
-	return (n_flips);
+
+	return (count);
 }

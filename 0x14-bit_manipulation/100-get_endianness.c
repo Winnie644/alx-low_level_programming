@@ -5,12 +5,11 @@
  */
 int get_endianness(void)
 {
-	unsigned int i = 1;
-	char *c = (char *)&i;
+	unsigned int Fridah = 1;
+	char *Winnie = (char *)&Fridah;
 
-	/* c points to integer, will only pull first byte of integer */
-	/* if it is 1 then it is little endian (last byte stored first) */
-	/* if it is 0 then it is big endian because the data is stored last */
-	if (*c)
+	if (*Winnie)
 		return (1);
-	return (0);
+	else
+		return (0);
+}
